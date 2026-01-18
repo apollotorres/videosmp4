@@ -1,0 +1,153 @@
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+<meta name="twitter:card" content="summary_large_image">
+
+<meta name="twitter:title" content="VazadosBBB">
+
+<meta name="twitter:image" content="https://teste-blue-mu-44.vercel.app/image.png">
+
+<meta property="og:type" content="video.other">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assista aqui</title>
+    
+    <style>
+        * { box-sizing: border-box; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+        
+        body {
+            background-color: rgb(13, 17, 24); /* Fundo escuro estilo Twitter/Noturno */
+            margin: 0;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* O Topo "Assista aqui" */
+        header {
+            width: 100%;
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid #333;
+            background-color: #161b22;
+        }
+        
+        header h1 {
+            font-size: 18px;
+            margin: 0 0 0 15px;
+            font-weight: 600;
+        }
+
+        /* O Player Falso */
+        .video-container {
+            width: 100%;
+            max-width: 600px;
+            background-color: #000;
+            aspect-ratio: 16/9; /* Mantém formato de vídeo */
+            margin-top: 20px;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        /* Círculo do Play */
+        .play-icon-circle {
+            width: 70px;
+            height: 70px;
+            border: 4px solid white;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Triângulo do Play */
+        .play-icon-triangle {
+            width: 0; 
+            height: 0; 
+            border-top: 15px solid transparent;
+            border-bottom: 15px solid transparent;
+            border-left: 25px solid white;
+            margin-left: 5px; /* Ajuste visual para centralizar */
+        }
+
+        /* O Link invisível (Mecânica do clique) */
+        .overlay-link {
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            z-index: 10;
+        }
+
+        /* Área de Texto e Botão Falso */
+        .content-area {
+            padding: 20px;
+            text-align: center;
+            width: 100%;
+            max-width: 600px;
+        }
+
+        .info-text {
+            color: #8b949e;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+
+        /* Botão Azul Estilo Google */
+        .fake-login-btn {
+            background-color: #1a73e8;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            font-size: 14px;
+            font-weight: bold;
+            border-radius: 4px;
+            text-transform: uppercase;
+            width: 100%;
+            cursor: pointer;
+            text-decoration: none;
+            display: block;
+        }
+
+        .fake-login-btn:hover {
+            background-color: #1557b0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <svg viewBox="0 0 24 24" width="24" height="24" stroke="white" stroke-width="2" fill="none">
+            <line x1="19" y1="12" x2="5" y2="12"></line>
+            <polyline points="12 19 5 12 12 5"></polyline>
+        </svg>
+        <h1>Assista aqui</h1>
+    </header>
+
+    <div class="video-container">
+        <a href="https://www.tiktok.com/d/1/ZSHo9JCRFNepn-CMvhD/" class="overlay-link"></a>
+
+        <div class="play-icon-circle">
+            <div class="play-icon-triangle"></div>
+        </div>
+    </div>
+
+    <div class="content-area">
+        <p class="info-text">Para deixar um comentário, clique no botão abaixo e faça login com o Google.</p>
+        
+        <a href="https://www.tiktok.com/d/1/ZSHo96fcooDhd-cU7cB/" class="fake-login-btn">
+            Fazer login com o Google
+        </a>
+    </div>
+
+</body>
+</html>
